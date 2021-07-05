@@ -11,21 +11,24 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="team_1"
+            style="TeamText">
+        </TextView>
         <ImageButton
             android:id="@+id/decreaseTeam1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true">
-        </ImageButton>
-        <ImageButton
-            android:id="@+id/increaseTeam1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true">
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_remove_24"
+            android:contentDescription="Minus Button"
+            >
         </ImageButton>
         <TextView
             android:id="@+id/score_1"
@@ -36,26 +39,40 @@
             android:text="0"
             >
         </TextView>
+        <ImageButton
+            android:id="@+id/increaseTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_add_24"
+            android:contentDescription="Plus Button"
+            >
+        </ImageButton>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="team_2"
+            style="TeamText">
+        </TextView>
         <ImageButton
             android:id="@+id/decreaseTeam2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true">
-        </ImageButton>
-        <ImageButton
-            android:id="@+id/increaseTeam2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true">
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_remove_24"
+            android:contentDescription="Minus Button"
+            >
         </ImageButton>
         <TextView
             android:id="@+id/score_2"
@@ -66,6 +83,16 @@
             android:text="0"
             >
         </TextView>
+        <ImageButton
+            android:id="@+id/increaseTeam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_add_24"
+            android:contentDescription="Plus Button"
+            >
+        </ImageButton>
     </RelativeLayout>
-
 </LinearLayout>
