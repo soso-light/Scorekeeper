@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.decreaseTeam1:
                 mScore1--;
                 mScoreText1.setText(String.valueOf(mScore1));
+                break;
             case R.id.decreaseTeam2:
                 mScore2--;
                 mScoreText2.setText(String.valueOf(mScore2));
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.increaseTeam1:
                 mScore1++;
                 mScoreText1.setText(String.valueOf(mScore1));
+                break;
             case R.id.increaseTeam2:
                 mScore2++;
                 mScoreText2.setText(String.valueOf(mScore2));
