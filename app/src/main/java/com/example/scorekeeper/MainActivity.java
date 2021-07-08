@@ -36,18 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        int nightMode = AppCompatDelegate.getDefaultNightMode();
-        if(nightMode ==AppCompatDelegate.MODE_NIGHT_YES){
-            menu.findItem(R.id.night_mode).setTitle(R.string.day_mode);
-        } else {
-            menu.findItem(R.id.night_mode).setTitle(R.string.night_mode);
-        }
-        return true;
-    }
-
     public void decreaseScore(View view) {
         int viewID = view.getId();
         switch (viewID){
@@ -79,8 +67,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        int nightMode = AppCompatDelegate.getDefaultNightMode();
+        if(nightMode ==AppCompatDelegate.MODE_NIGHT_YES){
+            menu.findItem(R.id.night_mode).setTitle(R.string.day_mode);
+        } else {
+            menu.findItem(R.id.night_mode).setTitle(R.string.night_mode);
+        }
+        return true;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         // Check if the correct item was clicked.
+        System.out.println("selected-------------------"+ item.getItemId()+ " "+ R.id.night_mode);
         if (item.getItemId() == R.id.night_mode) {
             // Get the night mode state of the app.
             int nightMode = AppCompatDelegate.getDefaultNightMode();
